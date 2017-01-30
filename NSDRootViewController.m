@@ -71,13 +71,20 @@
     accountconf.domain = @"79.135.221.94";
     accountconf.ringbackFilename = @"ringtone.wav";
     
+    
+    
     GSConfiguration *configuration = [GSConfiguration defaultConfiguration];
     configuration.account = accountconf;
     configuration.logLevel = 3;
     configuration.consoleLogLevel = 3;
     
+    
     GSUserAgent *agent = [GSUserAgent sharedAgent];
+    
+    //agent.
     [agent configure:configuration];
+    
+    
     [agent start];
     
     
