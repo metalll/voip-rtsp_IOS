@@ -1,44 +1,52 @@
-FFmpegPlayer-iOS - A movie player for iOS based on FFmpeg.
-==========================================================
+# FFmpeg iOS build script
 
-### Build Instructions
+[![Build Status](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script.svg?branch=master)](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script)
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=kewlbear&url=https://flattr.com/submit/auto?user_id=kewlbear&url=https%3A%2F%2Fgithub.com%2Fkewlbear%2FFFmpeg-iOS-build-script)
 
-First you need to download, configure and build [FFmpeg](http://ffmpeg.org/index.html). For this, open console and type in:
-	
-	cd kxmovie
-	git submodule update --init	
-	rake
+This is a shell script to build FFmpeg libraries for iOS and tvOS apps.
 
-### Usage
+Tested with:
 
-1. Drop files from kxmovie/output folder in your project.
-2. Add frameworks: MediaPlayer, CoreAudio, AudioToolbox, Accelerate, QuartzCore, OpenGLES and libz.dylib .
-3. Add libs: libkxmovie.a, libavcodec.a, libavformat.a, libavutil.a, libswscale.a, libswresample.a
+* FFmpeg 3.2
+* Xcode 8
 
-For play movies:
+## Requirements
 
-	ViewController *vc;
-	vc = [KxMovieViewController movieViewControllerWithContentPath:path parameters:nil];
-	[self presentViewController:vc animated:YES completion:nil];
+* https://github.com/libav/gas-preprocessor
+* yasm 1.2.0
 
-See KxMovieExample demo project as example of using.
+## Usage
 
-Also, you can include kxmovie as subproject. Look at [kxtorrent](https://github.com/kolyvan/kxtorrent) as example.
+Use build-ffmpeg-tvos.sh for tvOS.
 
-Remember, you need to copy some movies via iTunes for playing them. And you can use kxmovie for streaming from remote sources via rtsp, rtmp, http, etc.
+* To build everything:
 
-### Requirements
+        ./build-ffmpeg.sh
 
-At least iOS 7.0 and iPhone 4 (because of iOS 7 requirements).
+* To build arm64 libraries:
 
-### Screenshots
+        ./build-ffmpeg.sh arm64
 
-<img src="https://raw.github.com/atelierdumobile/FFmpegPlayer-iOS/master/readme-media/screenshot-movie.png" alt="Movie View" width="50%">
-<img src="https://raw.github.com/atelierdumobile/FFmpegPlayer-iOS/master/readme-media/screenshot-info.png" alt="Info View" width="50%">
-<img src="https://raw.github.com/atelierdumobile/FFmpegPlayer-iOS/master/readme-media/screenshot-movie-landscape.png" alt="Movie View Landscape" width="50%">
+* To build fat libraries for armv7 and x86_64 (64-bit simulator):
 
-### Feedback
+        ./build-ffmpeg.sh armv7 x86_64
 
-Tweet me — [@kolyvan_ru](http://twitter.com/kolyvan_ru).
+* To build fat libraries from separately built thin libraries:
 
-Tweet me — [@MonsieurDart](http://twitter.com/MonsieurDart).
+        ./build-ffmpeg.sh lipo
+
+## Download
+
+You can download a binary for FFmpeg 3.2 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
+
+## External libraries
+
+You should link your app with
+
+* libz.dylib
+* libbz2.dylib
+* libiconv.dylib
+
+## Influences
+
+* https://github.com/bbcallen/ijkplayer/blob/fc70895c64cbbd20f32f1d81d2d48609ed13f597/ios/tools/do-compile-ffmpeg.sh#L7

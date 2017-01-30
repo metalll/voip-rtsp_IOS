@@ -10,10 +10,10 @@
 //  KxMovie is licenced under the LGPL v3, see lgpl-3.0.txt
 
 #import <UIKit/UIKit.h>
-
+#import "../Gossip/Gossip.h"
 @class KxMovieViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,GSAccountDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

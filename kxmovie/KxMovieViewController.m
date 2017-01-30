@@ -354,6 +354,10 @@ _messageLabel.hidden = YES;
         _progressSlider.hidden = YES;
         _leftLabel.hidden = YES;
         _infoButton.hidden = YES;
+        _topBar.alpha = 0;
+        _topHUD.alpha = 0;
+        _bottomBar.alpha = 0;
+        
     }
 }
 
@@ -474,40 +478,40 @@ _messageLabel.hidden = YES;
 
 - (void) handleTap: (UITapGestureRecognizer *) sender
 {
-    if (sender.state == UIGestureRecognizerStateEnded) {
-        
-        if (sender == _tapGestureRecognizer) {
-
-            [self showHUD: _hiddenHUD];
-            
-        } else if (sender == _doubleTapGestureRecognizer) {
-                
-            UIView *frameView = [self frameView];
-            
-            if (frameView.contentMode == UIViewContentModeScaleAspectFit)
-                frameView.contentMode = UIViewContentModeScaleAspectFill;
-            else
-                frameView.contentMode = UIViewContentModeScaleAspectFit;
-            
-        }        
-    }
+//    if (sender.state == UIGestureRecognizerStateEnded) {
+//        
+//        if (sender == _tapGestureRecognizer) {
+//
+//            [self showHUD: _hiddenHUD];
+//            
+//        } else if (sender == _doubleTapGestureRecognizer) {
+//                
+//            UIView *frameView = [self frameView];
+//            
+//            if (frameView.contentMode == UIViewContentModeScaleAspectFit)
+//                frameView.contentMode = UIViewContentModeScaleAspectFill;
+//            else
+//                frameView.contentMode = UIViewContentModeScaleAspectFit;
+//            
+//        }        
+//    }
 }
 
 - (void) handlePan: (UIPanGestureRecognizer *) sender
 {
-    if (sender.state == UIGestureRecognizerStateEnded) {
-        
-        const CGPoint vt = [sender velocityInView:self.view];
-        const CGPoint pt = [sender translationInView:self.view];
-        const CGFloat sp = MAX(0.1, log10(fabsf(vt.x)) - 1.0);
-        const CGFloat sc = fabsf(pt.x) * 0.33 * sp;
-        if (sc > 10) {
-            
-            const CGFloat ff = pt.x > 0 ? 1.0 : -1.0;            
-            [self setMoviePosition: _moviePosition + ff * MIN(sc, 600.0)];
-        }
-        //LoggerStream(2, @"pan %.2f %.2f %.2f sec", pt.x, vt.x, sc);
-    }
+//    if (sender.state == UIGestureRecognizerStateEnded) {
+//        
+//        const CGPoint vt = [sender velocityInView:self.view];
+//        const CGPoint pt = [sender translationInView:self.view];
+//        const CGFloat sp = MAX(0.1, log10(fabsf(vt.x)) - 1.0);
+//        const CGFloat sc = fabsf(pt.x) * 0.33 * sp;
+//        if (sc > 10) {
+//            
+//            const CGFloat ff = pt.x > 0 ? 1.0 : -1.0;            
+//            [self setMoviePosition: _moviePosition + ff * MIN(sc, 600.0)];
+//        }
+//        //LoggerStream(2, @"pan %.2f %.2f %.2f sec", pt.x, vt.x, sc);
+//    }
 }
 
 #pragma mark - public
@@ -1349,9 +1353,9 @@ _messageLabel.hidden = YES;
                      animations:^{
                          
                          CGFloat alpha = _hiddenHUD ? 0 : 1;
-                         _topBar.alpha = alpha;
-                         _topHUD.alpha = alpha;
-                         _bottomBar.alpha = alpha;
+                         _topBar.alpha = 0;// if hide/inhide select aplha
+                         _topHUD.alpha = 0;
+                         _bottomBar.alpha = 0;
                      }
                      completion:nil];
     

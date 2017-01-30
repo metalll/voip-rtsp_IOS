@@ -10,7 +10,7 @@ end
 
 ## build ffmpeg
 
-SDK_VERSION='7.1'
+SDK_VERSION='9.0'
 
 XCODE_PATH='/Applications/Xcode.app/Contents/Developer/Platforms'
 GCC_PATH='/Applications/XCode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang'

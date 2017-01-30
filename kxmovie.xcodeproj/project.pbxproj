@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4306A3381E38DCE600CD0DC3 /* libNSLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4306A3371E38DCD200CD0DC3 /* libNSLogger.a */; };
+		4306A33D1E38DFEF00CD0DC3 /* NSDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4306A33C1E38DFEF00CD0DC3 /* NSDRootViewController.m */; };
+		4306A3401E38E0F600CD0DC3 /* NSDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4306A33F1E38E0F600CD0DC3 /* NSDToast.m */; };
+		4306A3441E38ED6400CD0DC3 /* libGossip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435B62FF1E38A99B00A44177 /* libGossip.a */; };
+		4306A3491E38F9DB00CD0DC3 /* UIColor+NSDColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4306A3481E38F9DB00CD0DC3 /* UIColor+NSDColors.m */; };
+		430BB1AA1E3F7D9000C90F87 /* iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 430BB1A91E3F7D9000C90F87 /* iphone.mp3 */; };
+		434F90C11E39FF7D00A62BE8 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434F90C01E39FF7D00A62BE8 /* image.xcassets */; };
+		434F90C71E3A0C7400A62BE8 /* NSDIncomingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 434F90C61E3A0C7400A62BE8 /* NSDIncomingViewController.m */; };
+		434F90CA1E3A0C8500A62BE8 /* NSDCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 434F90C91E3A0C8500A62BE8 /* NSDCallViewController.m */; };
+		435B63041E38A9E400A44177 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435B63031E38A9E400A44177 /* CFNetwork.framework */; };
+		435B63061E38AA0000A44177 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435B63051E38AA0000A44177 /* AVFoundation.framework */; };
+		435B63081E38AA1900A44177 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435B63071E38AA1900A44177 /* CoreMedia.framework */; };
+		435B630A1E38AA2F00A44177 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435B63091E38AA2F00A44177 /* CoreVideo.framework */; };
+		435B630E1E38B5ED00A44177 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435B630D1E38B5ED00A44177 /* main.storyboard */; };
+		435B63101E38B62F00A44177 /* launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435B630F1E38B62F00A44177 /* launch.storyboard */; };
+		43BA97601E3B782200D08CAD /* ringtone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43BA975F1E3B782200D08CAD /* ringtone.wav */; };
 		8704657C16F6ECA000D4083E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8704657A16F6EC9100D4083E /* libiconv.dylib */; };
 		87E793FD16390F6D000A0848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FC16390F6D000A0848 /* UIKit.framework */; };
 		87E793FF16390F6D000A0848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FE16390F6D000A0848 /* Foundation.framework */; };
@@ -46,8 +62,61 @@
 		87FD6191163A75DC0090956E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79437163910D0000A0848 /* QuartzCore.framework */; };
 		87FD6192163A75DF0090956E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79439163910EA000A0848 /* Accelerate.framework */; };
 		87FD6193163A75E10090956E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79435163910CA000A0848 /* OpenGLES.framework */; };
-		FD20733F5D6A4546A9836E2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D953B9D2DC48FBB580C6AC /* libPods.a */; };
+		ABDFDC7F3A88DA1DAF77EA73 /* libPods-kxmovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A00DD4EB6086C56F395F60 /* libPods-kxmovie.a */; };
+		ACCB96A9DCEB7100D0483566 /* libPods-KxMovieExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E354F455E02F09794926BD /* libPods-KxMovieExample.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4306A2FF1E38D5EE00CD0DC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4306A2F11E38D2CC00CD0DC3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AF0D3A87CA1F587C6AD8DD2282FB722E;
+			remoteInfo = "Pods-kxmovie";
+		};
+		4306A3121E38DA5B00CD0DC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4306A2F11E38D2CC00CD0DC3 /* Pods.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E77C00CCF1E694C578F008158239EF;
+			remoteInfo = "Pods-kxmovie";
+		};
+		4306A32B1E38DBCB00CD0DC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4306A2F11E38D2CC00CD0DC3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58D320B7E2A6B44047FF99A4E5C1C56D;
+			remoteInfo = "Pods-KxMovieExample";
+		};
+		4306A3361E38DCD200CD0DC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4306A2F11E38D2CC00CD0DC3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEA7A22977E74C73BD835BEA9F97B5BF;
+			remoteInfo = NSLogger;
+		};
+		435B62FE1E38A99B00A44177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435B62F91E38A99B00A44177 /* Gossip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22AD824315A5987C0000D05C;
+			remoteInfo = Gossip;
+		};
+		435B63001E38A99B00A44177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435B62F91E38A99B00A44177 /* Gossip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 224EFF8C15A6D27600CD541C;
+			remoteInfo = GossipExample;
+		};
+		435B630B1E38AA4300A44177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435B62F91E38A99B00A44177 /* Gossip.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 22AD824215A5987C0000D05C;
+			remoteInfo = Gossip;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		87FD6173163A75440090956E /* CopyFiles */ = {
@@ -62,10 +131,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07D459C0599C42B1906B39AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		49D953B9D2DC48FBB580C6AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E354F455E02F09794926BD /* libPods-KxMovieExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KxMovieExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4306A2F11E38D2CC00CD0DC3 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		4306A33B1E38DFEF00CD0DC3 /* NSDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDRootViewController.h; sourceTree = "<group>"; };
+		4306A33C1E38DFEF00CD0DC3 /* NSDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDRootViewController.m; sourceTree = "<group>"; };
+		4306A33E1E38E0F600CD0DC3 /* NSDToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDToast.h; sourceTree = "<group>"; };
+		4306A33F1E38E0F600CD0DC3 /* NSDToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDToast.m; sourceTree = "<group>"; };
+		4306A3471E38F9DB00CD0DC3 /* UIColor+NSDColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NSDColors.h"; sourceTree = "<group>"; };
+		4306A3481E38F9DB00CD0DC3 /* UIColor+NSDColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NSDColors.m"; sourceTree = "<group>"; };
+		430BB1A91E3F7D9000C90F87 /* iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone.mp3; sourceTree = "<group>"; };
+		434F90C01E39FF7D00A62BE8 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		434F90C51E3A0C7400A62BE8 /* NSDIncomingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDIncomingViewController.h; sourceTree = "<group>"; };
+		434F90C61E3A0C7400A62BE8 /* NSDIncomingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDIncomingViewController.m; sourceTree = "<group>"; };
+		434F90C81E3A0C8500A62BE8 /* NSDCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDCallViewController.h; sourceTree = "<group>"; };
+		434F90C91E3A0C8500A62BE8 /* NSDCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDCallViewController.m; sourceTree = "<group>"; };
+		434F90CB1E3A30DA00A62BE8 /* KxMovieExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KxMovieExample.entitlements; sourceTree = "<group>"; };
+		435B62F91E38A99B00A44177 /* Gossip.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Gossip.xcodeproj; sourceTree = "<group>"; };
+		435B63031E38A9E400A44177 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		435B63051E38AA0000A44177 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		435B63071E38AA1900A44177 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		435B63091E38AA2F00A44177 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		435B630D1E38B5ED00A44177 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		435B630F1E38B62F00A44177 /* launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = launch.storyboard; sourceTree = "<group>"; };
+		43BA975F1E3B782200D08CAD /* ringtone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ringtone.wav; path = GossipExample/ringtone.wav; sourceTree = "<group>"; };
 		4E6AB9BC191288370010CAA1 /* kxmovie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kxmovie-Prefix.pch"; sourceTree = "<group>"; };
 		4E6AB9BD19128FDA0010CAA1 /* KxLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KxLogger.h; sourceTree = "<group>"; };
+		75A00DD4EB6086C56F395F60 /* libPods-kxmovie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kxmovie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8704657A16F6EC9100D4083E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		87E793F816390F6D000A0848 /* KxMovieExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxMovieExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E793FC16390F6D000A0848 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -103,6 +194,10 @@
 		87E7945216391BD2000A0848 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		87E7946116394577000A0848 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
 		87FD6175163A75440090956E /* libkxmovie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkxmovie.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD82CA803F81D50BE12FB56 /* Pods-kxmovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kxmovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kxmovie/Pods-kxmovie.debug.xcconfig"; sourceTree = "<group>"; };
+		9276B22F77022A1602B93DE0 /* Pods-KxMovieExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KxMovieExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-KxMovieExample/Pods-KxMovieExample.release.xcconfig"; sourceTree = "<group>"; };
+		AB456C314650F219B72ABBE0 /* Pods-kxmovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kxmovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-kxmovie/Pods-kxmovie.release.xcconfig"; sourceTree = "<group>"; };
+		CEF2BA0A03C6CAAABFF098E5 /* Pods-KxMovieExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KxMovieExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KxMovieExample/Pods-KxMovieExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +205,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4306A3441E38ED6400CD0DC3 /* libGossip.a in Frameworks */,
+				435B630A1E38AA2F00A44177 /* CoreVideo.framework in Frameworks */,
+				435B63081E38AA1900A44177 /* CoreMedia.framework in Frameworks */,
+				435B63061E38AA0000A44177 /* AVFoundation.framework in Frameworks */,
+				435B63041E38A9E400A44177 /* CFNetwork.framework in Frameworks */,
 				8704657C16F6ECA000D4083E /* libiconv.dylib in Frameworks */,
 				87E7945116391BC1000A0848 /* libz.dylib in Frameworks */,
 				87E7944A16391B9E000A0848 /* libavcodec.a in Frameworks */,
@@ -126,7 +226,7 @@
 				87E794411639110F000A0848 /* Accelerate.framework in Frameworks */,
 				87E794421639110F000A0848 /* QuartzCore.framework in Frameworks */,
 				87E794431639110F000A0848 /* OpenGLES.framework in Frameworks */,
-				FD20733F5D6A4546A9836E2D /* libPods.a in Frameworks */,
+				ACCB96A9DCEB7100D0483566 /* libPods-KxMovieExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4306A3381E38DCE600CD0DC3 /* libNSLogger.a in Frameworks */,
 				87FD6176163A75440090956E /* Foundation.framework in Frameworks */,
 				87FD618D163A75CF0090956E /* CoreGraphics.framework in Frameworks */,
 				87FD618E163A75D20090956E /* MediaPlayer.framework in Frameworks */,
@@ -142,20 +243,64 @@
 				87FD6192163A75DF0090956E /* Accelerate.framework in Frameworks */,
 				87FD6191163A75DC0090956E /* QuartzCore.framework in Frameworks */,
 				87FD6193163A75E10090956E /* OpenGLES.framework in Frameworks */,
+				ABDFDC7F3A88DA1DAF77EA73 /* libPods-kxmovie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4306A2F21E38D2CC00CD0DC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4306A3371E38DCD200CD0DC3 /* libNSLogger.a */,
+				4306A3001E38D5EE00CD0DC3 /* libPods-kxmovie.a */,
+				4306A32C1E38DBCB00CD0DC3 /* libPods-KxMovieExample.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4306A33A1E38DFCF00CD0DC3 /* NSD */ = {
+			isa = PBXGroup;
+			children = (
+				4306A33B1E38DFEF00CD0DC3 /* NSDRootViewController.h */,
+				4306A33C1E38DFEF00CD0DC3 /* NSDRootViewController.m */,
+				4306A33E1E38E0F600CD0DC3 /* NSDToast.h */,
+				4306A33F1E38E0F600CD0DC3 /* NSDToast.m */,
+				4306A3471E38F9DB00CD0DC3 /* UIColor+NSDColors.h */,
+				4306A3481E38F9DB00CD0DC3 /* UIColor+NSDColors.m */,
+				434F90C51E3A0C7400A62BE8 /* NSDIncomingViewController.h */,
+				434F90C61E3A0C7400A62BE8 /* NSDIncomingViewController.m */,
+				434F90C81E3A0C8500A62BE8 /* NSDCallViewController.h */,
+				434F90C91E3A0C8500A62BE8 /* NSDCallViewController.m */,
+				430BB1A91E3F7D9000C90F87 /* iphone.mp3 */,
+				43BA975F1E3B782200D08CAD /* ringtone.wav */,
+			);
+			name = NSD;
+			sourceTree = "<group>";
+		};
+		435B62FA1E38A99B00A44177 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				435B62FF1E38A99B00A44177 /* libGossip.a */,
+				435B63011E38A99B00A44177 /* GossipExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		87E793EB16390F10000A0848 = {
 			isa = PBXGroup;
 			children = (
+				434F90C01E39FF7D00A62BE8 /* image.xcassets */,
+				4306A33A1E38DFCF00CD0DC3 /* NSD */,
+				435B630F1E38B62F00A44177 /* launch.storyboard */,
+				435B630D1E38B5ED00A44177 /* main.storyboard */,
+				435B62F91E38A99B00A44177 /* Gossip.xcodeproj */,
 				87E7940216390F6D000A0848 /* KxMovieExample */,
 				87FD6177163A75440090956E /* kxmovie */,
 				87E793FB16390F6D000A0848 /* Frameworks */,
 				87E793F916390F6D000A0848 /* Products */,
-				07D459C0599C42B1906B39AD /* Pods.xcconfig */,
+				AAF71CC825A71E8B8177E12B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +316,11 @@
 		87E793FB16390F6D000A0848 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4306A2F11E38D2CC00CD0DC3 /* Pods.xcodeproj */,
+				435B63091E38AA2F00A44177 /* CoreVideo.framework */,
+				435B63071E38AA1900A44177 /* CoreMedia.framework */,
+				435B63051E38AA0000A44177 /* AVFoundation.framework */,
+				435B63031E38A9E400A44177 /* CFNetwork.framework */,
 				8704657A16F6EC9100D4083E /* libiconv.dylib */,
 				87E7944416391B9E000A0848 /* libavcodec.a */,
 				87E7944616391B9E000A0848 /* libavformat.a */,
@@ -187,7 +337,8 @@
 				87E79439163910EA000A0848 /* Accelerate.framework */,
 				87E79437163910D0000A0848 /* QuartzCore.framework */,
 				87E79435163910CA000A0848 /* OpenGLES.framework */,
-				49D953B9D2DC48FBB580C6AC /* libPods.a */,
+				20E354F455E02F09794926BD /* libPods-KxMovieExample.a */,
+				75A00DD4EB6086C56F395F60 /* libPods-kxmovie.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +346,7 @@
 		87E7940216390F6D000A0848 /* KxMovieExample */ = {
 			isa = PBXGroup;
 			children = (
+				434F90CB1E3A30DA00A62BE8 /* KxMovieExample.entitlements */,
 				87E7940A16390F6D000A0848 /* KxMovieExample-Prefix.pch */,
 				87E7942B1639108E000A0848 /* AppDelegate.h */,
 				87E7942C1639108E000A0848 /* AppDelegate.m */,
@@ -235,6 +387,17 @@
 			path = kxmovie;
 			sourceTree = "<group>";
 		};
+		AAF71CC825A71E8B8177E12B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BD82CA803F81D50BE12FB56 /* Pods-kxmovie.debug.xcconfig */,
+				AB456C314650F219B72ABBE0 /* Pods-kxmovie.release.xcconfig */,
+				CEF2BA0A03C6CAAABFF098E5 /* Pods-KxMovieExample.debug.xcconfig */,
+				9276B22F77022A1602B93DE0 /* Pods-KxMovieExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,15 +405,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87E7941A16390F6D000A0848 /* Build configuration list for PBXNativeTarget "KxMovieExample" */;
 			buildPhases = (
-				D2074A9FBC4F4D4892A202BE /* Check Pods Manifest.lock */,
+				661092B6F22B5B018800F793 /* [CP] Check Pods Manifest.lock */,
 				87E793F416390F6D000A0848 /* Sources */,
 				87E793F516390F6D000A0848 /* Frameworks */,
 				87E793F616390F6D000A0848 /* Resources */,
-				B5B7274CA0134F769E7882A1 /* Copy Pods Resources */,
+				BC8C1D4B389CF27AB360F3C8 /* [CP] Embed Pods Frameworks */,
+				2DCF57753898E4A6FE54C6B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4306A3131E38DA5B00CD0DC3 /* PBXTargetDependency */,
+				435B630C1E38AA4300A44177 /* PBXTargetDependency */,
 			);
 			name = KxMovieExample;
 			productName = KxMovieExample;
@@ -261,9 +427,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87FD6180163A75440090956E /* Build configuration list for PBXNativeTarget "kxmovie" */;
 			buildPhases = (
+				EA32A1118817632644264234 /* [CP] Check Pods Manifest.lock */,
 				87FD6171163A75440090956E /* Sources */,
 				87FD6172163A75440090956E /* Frameworks */,
 				87FD6173163A75440090956E /* CopyFiles */,
+				3DF55432CAB1F4CD507386FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,10 +448,18 @@
 		87E793ED16390F10000A0848 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					87E793F716390F6D000A0848 = {
-						DevelopmentTeam = 82J7XA77JC;
+						DevelopmentTeam = 328Q23T368;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -297,6 +473,16 @@
 			mainGroup = 87E793EB16390F10000A0848;
 			productRefGroup = 87E793F916390F6D000A0848 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 435B62FA1E38A99B00A44177 /* Products */;
+					ProjectRef = 435B62F91E38A99B00A44177 /* Gossip.xcodeproj */;
+				},
+				{
+					ProductGroup = 4306A2F21E38D2CC00CD0DC3 /* Products */;
+					ProjectRef = 4306A2F11E38D2CC00CD0DC3 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				87E793F716390F6D000A0848 /* KxMovieExample */,
@@ -305,49 +491,137 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4306A3001E38D5EE00CD0DC3 /* libPods-kxmovie.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-kxmovie.a";
+			remoteRef = 4306A2FF1E38D5EE00CD0DC3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4306A32C1E38DBCB00CD0DC3 /* libPods-KxMovieExample.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-KxMovieExample.a";
+			remoteRef = 4306A32B1E38DBCB00CD0DC3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4306A3371E38DCD200CD0DC3 /* libNSLogger.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNSLogger.a;
+			remoteRef = 4306A3361E38DCD200CD0DC3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		435B62FF1E38A99B00A44177 /* libGossip.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGossip.a;
+			remoteRef = 435B62FE1E38A99B00A44177 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		435B63011E38A99B00A44177 /* GossipExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GossipExample.app;
+			remoteRef = 435B63001E38A99B00A44177 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		87E793F616390F6D000A0848 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435B630E1E38B5ED00A44177 /* main.storyboard in Resources */,
 				87E7940F16390F6D000A0848 /* Default.png in Resources */,
 				87E7941116390F6D000A0848 /* Default@2x.png in Resources */,
+				435B63101E38B62F00A44177 /* launch.storyboard in Resources */,
+				430BB1AA1E3F7D9000C90F87 /* iphone.mp3 in Resources */,
 				87E7941316390F6D000A0848 /* Default-568h@2x.png in Resources */,
 				87E794271639107F000A0848 /* kxmovie.bundle in Resources */,
+				43BA97601E3B782200D08CAD /* ringtone.wav in Resources */,
+				434F90C11E39FF7D00A62BE8 /* image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B5B7274CA0134F769E7882A1 /* Copy Pods Resources */ = {
+		2DCF57753898E4A6FE54C6B5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KxMovieExample/Pods-KxMovieExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D2074A9FBC4F4D4892A202BE /* Check Pods Manifest.lock */ = {
+		3DF55432CAB1F4CD507386FE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kxmovie/Pods-kxmovie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661092B6F22B5B018800F793 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC8C1D4B389CF27AB360F3C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KxMovieExample/Pods-KxMovieExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA32A1118817632644264234 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -359,11 +633,16 @@
 			files = (
 				87E7940916390F6D000A0848 /* main.m in Sources */,
 				87E794261639107F000A0848 /* KxAudioManager.m in Sources */,
+				434F90CA1E3A0C8500A62BE8 /* NSDCallViewController.m in Sources */,
+				4306A33D1E38DFEF00CD0DC3 /* NSDRootViewController.m in Sources */,
 				87E794281639107F000A0848 /* KxMovieDecoder.m in Sources */,
 				87E794291639107F000A0848 /* KxMovieGLView.m in Sources */,
+				4306A3401E38E0F600CD0DC3 /* NSDToast.m in Sources */,
 				87E7942A1639107F000A0848 /* KxMovieViewController.m in Sources */,
 				87E7942F1639108E000A0848 /* AppDelegate.m in Sources */,
 				87E794301639108E000A0848 /* MainViewController.m in Sources */,
+				434F90C71E3A0C7400A62BE8 /* NSDIncomingViewController.m in Sources */,
+				4306A3491E38F9DB00CD0DC3 /* UIColor+NSDColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,10 +659,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4306A3131E38DA5B00CD0DC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kxmovie";
+			targetProxy = 4306A3121E38DA5B00CD0DC3 /* PBXContainerItemProxy */;
+		};
+		435B630C1E38AA4300A44177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gossip;
+			targetProxy = 435B630B1E38AA4300A44177 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		87E793F216390F10000A0848 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -400,7 +693,7 @@
 		};
 		87E7941B16390F6D000A0848 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D459C0599C42B1906B39AD /* Pods.xcconfig */;
+			baseConfigurationReference = CEF2BA0A03C6CAAABFF098E5 /* Pods-KxMovieExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -408,9 +701,11 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = KxMovieExample/KxMovieExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -428,6 +723,19 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers\"",
+					"\"$(SRCROOT)/pjsip/src/pjlib/include\"",
+					"\"$(SRCROOT)/pjsip/src/pjlib-util/include\"",
+					"\"$(SRCROOT)/pjsip/src/pjmedia/include\"",
+					"\"$(SRCROOT)/pjsip/src/pjnath/include\"",
+					"\"$(SRCROOT)/pjsip/src/pjsip/include\"",
+					"\"$(SRCROOT)/pjsip/src/third_party/resample/include\"",
+					"\"$(SRCROOT)/pjsip/src/third_party/speex/include\"",
+					"\"$(SRCROOT)/pjsip/src/third_party/srtp/include\"",
+					"\"$(SRCROOT)/pjsip/src/third_party/srtp/crypto/include\"",
+				);
 				INFOPLIST_FILE = "KxMovieExample/KxMovieExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -435,10 +743,11 @@
 					"\"$(SRCROOT)/libs/FFmpeg\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = nsd.kolyvan.KxMovieExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F7D87EB9-8C75-4EE9-AB3B-466913B9C8CB";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = ffmpeg;
 				WRAPPER_EXTENSION = app;
 			};
@@ -446,7 +755,7 @@
 		};
 		87E7941C16390F6D000A0848 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D459C0599C42B1906B39AD /* Pods.xcconfig */;
+			baseConfigurationReference = 9276B22F77022A1602B93DE0 /* Pods-KxMovieExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -454,9 +763,11 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = KxMovieExample/KxMovieExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -467,16 +778,30 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers\"",
+					"\"$(SRCROOT)/pjsip/src/pjlib/include\"",
+					"\"$(SRCROOT)/pjsip/src/pjlib-util/include\"",
+					"\"$(SRCROOT)/pjsip/src/pjmedia/include\"",
+					"\"$(SRCROOT)/pjsip/src/pjnath/include\"",
+					"\"$(SRCROOT)/pjsip/src/pjsip/include\"",
+					"\"$(SRCROOT)/pjsip/src/third_party/resample/include\"",
+					"\"$(SRCROOT)/pjsip/src/third_party/speex/include\"",
+					"\"$(SRCROOT)/pjsip/src/third_party/srtp/include\"",
+					"\"$(SRCROOT)/pjsip/src/third_party/srtp/crypto/include\"",
+				);
 				INFOPLIST_FILE = "KxMovieExample/KxMovieExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/FFmpeg\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = nsd.kolyvan.KxMovieExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F7D87EB9-8C75-4EE9-AB3B-466913B9C8CB";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = ffmpeg;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -485,6 +810,7 @@
 		};
 		87FD617E163A75440090956E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD82CA803F81D50BE12FB56 /* Pods-kxmovie.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -511,6 +837,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,12 +848,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = FFmpeg;
+				USER_HEADER_SEARCH_PATHS = "ffmpeg-3.2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
 		87FD617F163A75440090956E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB456C314650F219B72ABBE0 /* Pods-kxmovie.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -546,6 +875,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -555,8 +885,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = FFmpeg;
+				USER_HEADER_SEARCH_PATHS = "ffmpeg-3.2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Release;
 		};
